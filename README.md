@@ -5,31 +5,6 @@ good and bad teacher demonstrations affect privacy and oversight decisions.
 The maintained pipeline uses MLX on Apple Silicon and the
 `mlx-community/gemma-3-text-4b-pt-4bit` base model.
 
-## What to commit
-
-Commit the code, source training data, prepared mixtures, frozen evaluation
-set, and analysis outputs needed to reproduce the reported results:
-
-- `scripts/` and `requirements.txt`
-- `data/processed_v2d/` — processed teacher demonstrations used for mixture
-  construction
-- `data/mixtures_pt/` — exact sampled train/validation/test sets for each
-  condition and seed
-- `data/eval_v2/` — hard-evaluation candidates, reviewed base set, and the
-  canonical frozen 200-example evaluation set
-- `results/pt/` — manual review/annotation files, summary reports, and figures
-- `runs/predictions_pt/` — the 200-example predictions consumed by the
-  analysis scripts
-
-Do **not** commit `runs/adapters_pt/`: these are reproducible training outputs,
-are about 1 GB in total, and are excluded by `.gitignore`. To evaluate or
-analyze the recorded experiment, use the committed predictions; training
-adapters is only necessary to regenerate them.
-
-The old scenario-generation, chat-model, and earlier evaluation branches were
-removed. The exact benchmark is retained so the final reported evaluation does
-not depend on rerunning stochastic candidate/paraphrase generation or manual
-review.
 
 ## Environment
 
