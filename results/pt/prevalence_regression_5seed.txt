@@ -1,0 +1,32 @@
+
+================================================================================
+ALL
+================================================================================
+N group-condition observations: 350
+Intercept: +9.0833 (SE=0.7277)
+Slope per +100% bad supervision: -5.2529
+Slope 95% CI: [-7.6636, -2.8422]
+R^2: 0.0498
+Linear zero crossing: 172.9% bad supervision
+NOTE: zero crossing falls outside observed 0-100% range.
+
+================================================================================
+PRIVACY
+================================================================================
+N group-condition observations: 175
+Intercept: +15.5416 (SE=0.3560)
+Slope per +100% bad supervision: -4.1613
+Slope 95% CI: [-5.3407, -2.9818]
+R^2: 0.2166
+Linear zero crossing: 373.5% bad supervision
+NOTE: zero crossing falls outside observed 0-100% range.
+
+================================================================================
+OVERSIGHT
+================================================================================
+N group-condition observations: 175
+Intercept: +2.6251 (SE=0.1169)
+Slope per +100% bad supervision: -6.3445
+Slope 95% CI: [-6.7317, -5.9573]
+R^2: 0.8564
+Linear zero crossing: 41.4% bad supervision
